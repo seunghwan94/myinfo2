@@ -1,0 +1,387 @@
+@media(max-width: 1320px) {
+  .main-bottom-card{
+    flex-direction: column;
+  }
+  .main-bottom-card > .card{
+    margin-bottom:10px;
+  }
+  .target-card {
+    max-width: none !important;
+  }
+}
+
+@media(max-width: 1140px) {
+  .main-top > img {
+    display: none;
+  }
+}
+
+@media(max-width: 720px) {
+  .wrap .vh-100[style="width:480px;"] {
+    display: none !important;
+  }
+  
+  main.w-100 {
+    width: 100% !important;
+  }
+  header {
+    display: none !important;
+  }
+  .wrap {
+    flex-direction: column;
+  }
+  .header-menu {
+    display: block !important;
+  }
+}
+
+@media(max-width: 576px) {
+  .main-bottom-title{
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .card-header > div{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
+.target-card{
+  max-width: 750px;
+}
+.card-header img {
+  width : 80px;
+  height : 80px;
+  object-fit : cover;
+}
+.container-circle {
+  width: 70px;
+  height: 70px;
+  margin: 5px 10px;
+}
+.back-ground {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)),
+    url("../assets/img/background.jpg");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  top: 0px;
+  left: 0px;
+}
+
+/* 프로젝트 카드 호버 효과 */
+.project-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.project-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.project-card:hover .project-hover-overlay {
+  opacity: 1;
+}
+
+.project-hover-content {
+  text-align: center;
+  max-width: 90%;
+}
+
+/* 모달 스타일 */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: 3px solid var(--bs-danger);
+}
+
+.carousel {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
+.main-bottom {
+  background-color: #1a1a1a;
+}
+/* 프로필 섹션 스타일 */
+.profile-section {
+  padding: 40px 0;
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+
+.profile-image-container {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.profile-info {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.last-updated {
+  color: #6c757d;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-item {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-item i {
+  width: 20px;
+  color: #6c757d;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .profile-image-container {
+    margin-bottom: 30px;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+  }
+}
+
+
+/* 스킬 섹션 스타일링 */
+.skills-section {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.skill-group {
+  margin-bottom: 30px;
+  background-color: #24292e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #58a6ff;
+  border-bottom: 1px solid #363b42;
+  padding-bottom: 8px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: #2d333b;
+  color: #e6edf3;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 1px solid #444c56;
+}
+
+.skill-pill:hover {
+  background-color: #388bfd;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .skill-group {
+    padding: 15px;
+  }
+  
+  .skill-category {
+    font-size: 1.2rem;
+  }
+  
+  .skill-pill {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 프로젝트 카드 스타일링 */
+.project-card-wrapper {
+  width: calc(33.33% - 1rem);
+  min-width: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.project-card {
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.project-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.project-card:hover .project-hover-overlay {
+  opacity: 1;
+}
+
+.project-hover-content {
+  text-align: center;
+  max-width: 90%;
+}
+
+/* 반응형 조정 */
+@media (max-width: 1200px) {
+  .project-card-wrapper {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card-wrapper {
+    width: 100%;
+  }
+}
+
+.info-box {
+  background-color: #000000;
+  border-left: 4px solid #0d6efd;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.roles-list {
+  padding-left: 20px;
+}
+
+.roles-list li {
+  margin-bottom: 8px;
+}
+
+.roles-list ul {
+  padding-left: 25px;
+  margin-top: 5px;
+}
