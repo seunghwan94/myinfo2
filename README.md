@@ -43,3 +43,12 @@ server {
 sudo nginx -t
 sudo systemctl reload nginx
 ```
+
+![image](https://github.com/user-attachments/assets/f4945d89-0ecc-4e94-a56b-b3320c15ee16)
+![image](https://github.com/user-attachments/assets/815443b7-0813-45d8-8956-30e30a4e38b6)
+![image](https://github.com/user-attachments/assets/17d26e78-6d21-4da5-bb70-b9ba536acc9d)
+![image](https://github.com/user-attachments/assets/eb2643f7-c669-4559-a6f0-cec082d4e7b2)
+
+
+
+
