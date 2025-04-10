@@ -6,19 +6,19 @@ $skills = [
     'percentage' => 70
   ],
   [
-    'name' => 'PHP ( CodeIgniter )',
-    'percentage' => 80
-  ],
-  [
-    'name' => 'Python ( Flask )',
-    'percentage' => 65
+    'name' => 'Python ( TensorFlow )',
+    'percentage' => 75
   ],
   [
     'name' => 'JavaScript & jQuery',
     'percentage' => 80
   ],
   [
-    'name' => 'MySQL & PostgreSQL',
+    'name' => 'React & Vue.js',
+    'percentage' => 65
+  ],
+  [
+    'name' => 'MariaDB & MongoDB',
     'percentage' => 70
   ]
 ];
@@ -43,27 +43,34 @@ $skill_categories = [
     ['name' => 'JSP/Servlet', 'color' => 'info'],
     ['name' => 'BootStrap', 'color' => 'purple'],
     ['name' => 'CodeIgniter', 'color' => 'dark'],
-    ['name' => 'Thymeleaf', 'color' => 'success'],
-    ['name' => 'mustache', 'color' => 'danger'],
+    ['name' => 'TensorFlow/Keras', 'color' => 'danger'],
     ['name' => 'Flask', 'color' => 'dark'],
-    ['name' => 'Express', 'color' => 'dark']
+    ['name' => 'Express', 'color' => 'dark'],
+    ['name' => 'Socket.io', 'color' => 'info']
   ],
   'RDBMS' => [
       ['name' => 'MySQL', 'color' => 'secondary'],
       ['name' => 'MariaDB', 'color' => 'secondary'],
+      ['name' => 'MongoDB', 'color' => 'success'],
       ['name' => 'PostgreSQL', 'color' => 'secondary'],
-      ['name' => 'Oracle', 'color' => 'secondary'],
-      ['name' => 'Tibero', 'color' => 'danger']
+      ['name' => 'Oracle', 'color' => 'secondary']
   ],
   'DevOps' => [
       ['name' => 'AWS', 'color' => 'warning'],
+      ['name' => 'GCP', 'color' => 'primary'],
       ['name' => 'DNS(Cloudflare)', 'color' => 'primary'],
       ['name' => 'Swagger', 'color' => 'secondary'],
       ['name' => 'Docker', 'color' => 'info'],
-      ['name' => 'Apache', 'color' => 'danger'],
+      ['name' => 'GitHub Actions', 'color' => 'dark'],
       ['name' => 'Jacoco', 'color' => 'warning']
   ],
-
+  'AI/ML' => [
+      ['name' => '강화학습', 'color' => 'success'],
+      ['name' => 'LSTM', 'color' => 'info'],
+      ['name' => 'Transformer', 'color' => 'warning'],
+      ['name' => 'Attention', 'color' => 'danger'],
+      ['name' => 'Gemini API', 'color' => 'primary']
+  ],
   'Server OS' => [
       ['name' => 'CentOS(Red Hat)', 'color' => 'danger'],
       ['name' => 'Ubuntu', 'color' => 'danger'],
@@ -75,6 +82,6 @@ $skill_categories = [
 $capabilities = [
   'BackEnd' => 80,
   'FrontEnd' => 60, 
-  'DataBase' => 70
+  'DataBase' => 70,
 ];
 ?>

@@ -1,4 +1,4 @@
-<div class="main-bottom py-5">
+<div class="main-bottom pb-5 pt-1">
   <div class="container-fluid">
     <!-- 프로젝트 섹션 헤더 -->
     <div class="d-flex align-items-end my-4 main-bottom-title">

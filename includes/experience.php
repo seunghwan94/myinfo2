@@ -1,40 +1,61 @@
-<div class="main-bottom py-5 pe-3">
-  <div class="container-fluid">
-    <h2 class="border-start border-4 border-<?php echo $settings['accent_color']; ?> ps-3 mb-3 fw-bold">Experience</h2>
-    <?php foreach ($experiences as $experience): ?>
-    <!-- 경력별 섹션 -->
-    <div class="d-flex align-items-end my-4 ms-3 main-bottom-title">
-      <p class="fw-bold fs-5 m-0 me-1"><?php echo $experience['company']; ?></p>
-      <p class="text-secondary m-0"><?php echo $experience['period']; ?> <?php echo $experience['duration']; ?></p>
-    </div>
+<?php
+$timeline = [
+  [
+    'period' => '2021.03 - 2022.07',
+    'company' => '(주)메이크봇',
+    'position' => '웹 개발자',
+    'description' => '대한항공 및 환경부, 풀무원 시스템 개발 및 유지보수',
+    'projects' => [
+        '대한항공 내부 시스템 유지보수 및 최적화',
+        '환경부 생활화학제품 중독 응급 대응 시스템 개발',
+        '풀무원 웹사이트 유지보수'
+    ]
+  ],
+  [
+      'period' => '2022.08 - 2025.03',
+      'company' => '웨인테크놀로지',
+      'position' => '웹 개발자',
+      'description' => '금융권 웹 개발 및 유지보수 담당',
+      'projects' => [
+          '키움YES저축은행 개발 및 유지보수',
+          '진영자산관리대부 유지보수',
+          '삼호저축은행 유지보수'
+      ]
+  ]
+];
+?>
 
-    <div class="d-flex main-bottom-card  ms-3">
-      <?php foreach ($experience['projects'] as $project): ?>
-      <div class="card mx-2">
-        <div class="card-header">
-          <div class="d-flex align-items-end justify-content-between">
-            <p class="fw-bold m-0 me-1"><?php echo $project['client']; ?></p>
-            <p class="text-secondary m-0 small"><?php echo $project['period']; ?> <?php echo $project['duration']; ?></p>
-          </div>
-        </div>
-        <div class="card-body">
-          <h5 class="fw-bold"  style="color:#58a6ff"><?php echo $project['title']; ?></h5>
-          <div class="p-2">
-            사용한 기술 스택<br/>
-            <div class="ps-3">
-            <?php echo $project['tech_stack']; ?><br/><br/>
-            </div>
-            주요 업무 및 성과
-            <div class="ps-3">
-              <?php foreach ($project['details'] as $detail): ?>
-              <?php echo $detail; ?><br/>
-              <?php endforeach; ?>
+<div class="main-bottom pb-4 px-3">
+
+    <!-- 제목 + 다운로드 링크 -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="border-start border-4 border-<?php echo $settings['accent_color']; ?> ps-3 fw-bold m-0">Work Experience</h2>
+      <small class="text-muted me-3">
+        <a href="../config/download_work_experience.php" download class="text-muted text-decoration-none">(경력기술서 다운로드)</a>
+      </small>
+    </div>
+    <div class="row px-4" >
+      <?php foreach ($timeline as $item): ?>
+      <div class="experience-group mb-4">
+        <div class="experience-text">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <h5 class="fw-bold mb-0" style="color:#58a6ff"><?php echo $item['company']; ?></h5>
+            <div class="text-end small text-muted">
+              <span class="badge bg-<?php echo $settings['accent_color']; ?> mb-1"><?php echo $item['position']; ?></span>
+              <span><?php echo $item['period']; ?></span>
             </div>
           </div>
         </div>
+        <!-- 설명 -->
+        <p class="small mb-2"><?php echo $item['description']; ?></p>
+        <!-- 프로젝트 리스트 -->
+        <p class="fw-bold small mb-1 text-<?php echo $settings['accent_color']; ?>">주요 프로젝트</p>
+        <ul class="ps-3 small mb-0">
+          <?php foreach ($item['projects'] as $project): ?>
+          <li class="mb-1"><?php echo $project; ?></li>
+          <?php endforeach; ?>
+        </ul>
       </div>
       <?php endforeach; ?>
     </div>
-    <?php endforeach; ?>
-  </div>
 </div>

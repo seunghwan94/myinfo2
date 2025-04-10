@@ -1,4 +1,4 @@
-<section class="skills-section py-5">
+<section class="skills-section">
   <div class="container-fluid">
     <div class="row mb-4">
       <div class="col-12">
@@ -7,7 +7,7 @@
     </div>
     
     <!-- 두 열 레이아웃 -->
-    <div class="row px-4">
+    <div class="row px-4 pb-5">
       <!-- 왼쪽 열 -->
       <div class="col-md-6">
         <!-- Backend -->
